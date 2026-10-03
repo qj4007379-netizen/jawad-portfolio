@@ -142,7 +142,7 @@ function Projects() {
           }}
         >
           <div style={{}}>MAGA BLOOG</div>
-         <a href="https://jawad-portfolio.netlify.app" target="_blank" rel="">
+         <a href="https://jawad-portfolio-web.netlify.app" target="_blank" rel="">
             <img src={portfolio} alt="portfolio" />
           </a>
           <div style={{}}></div>
