@@ -1,0 +1,22 @@
+.foter {
+  font-family: "Space Grotesk", sans-serif;
+  background-color: rgb(27, 27, 27);
+  color: white;
+  font-weight: 600;
+  gap: 50px;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: solid 1px rgb(255, 1, 1);
+}
+
+.link {
+  border-right: solid 1px red;
+  padding-right: 50px;
+}
+
+.copy {
+  color: rgb(83, 83, 83);
+}

@@ -1,0 +1,18 @@
+.nav {
+  font-family: "Space Grotesk", sans-serif;
+  background-color: rgb(27, 27, 27);
+  font-weight: 600;
+  display: flex;
+  padding: 20px;
+  color: white;
+}
+
+.div {
+  width: 39%;
+}
+
+#divtwo {
+  display: flex;
+  gap: 35px;
+  width: 50%;
+}

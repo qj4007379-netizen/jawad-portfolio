@@ -1,0 +1,62 @@
+.project {
+  background-color: rgb(27, 27, 27);
+  font-family: "Space Grotesk", sans-serif;
+  color: rgb(252, 249, 249);
+  width: 100%;
+  height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2cap;
+}
+
+.h1 {
+  font-size: clamp(16px, 8vw, 32px);
+  font-weight: 700;
+  color: rgb(250, 5, 5);
+}
+
+.carddiv {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.card {
+  height: 80%;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 15px;
+  border: solid 1px rgb(252, 249, 249);
+  background-color: rgb(17, 17, 17);
+  gap: 15px;
+  padding: 18px;
+}
+
+.img {
+  height: 280px;
+  border-radius: 15px;
+}
+
+.btndiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  color: rgb(253, 252, 252);
+}
+.btn {
+  border: solid 1px rgb(253, 4, 4);
+  background-color: rgb(17, 17, 17);
+  border-radius: 10px;
+  padding: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+}

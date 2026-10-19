@@ -1,0 +1,31 @@
+.about {
+  font-family: "Space Grotesk", sans-serif;
+  background-color: rgb(27, 27, 27);
+  color: white;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about2 {
+  display: flex;
+  flex-direction: column;
+  padding: 18px;
+  border-top: solid 1px rgb(252, 249, 249);
+  border-right: solid 1px rgb(252, 249, 249);
+  border-bottom: solid 1px rgb(252, 5, 5);
+  border-left: solid 1px rgb(248, 5, 5);
+
+  border-radius: 15px;
+  background-color: rgb(17, 17, 17);
+  gap: 25px;
+  padding: 25px;
+}
+
+.h1about {
+  font-size: clamp(48px, 8vw, 64px);
+  font-weight: 600;
+  color: rgb(250, 5, 5);
+}
