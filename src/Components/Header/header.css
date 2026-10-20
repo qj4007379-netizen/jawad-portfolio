@@ -1,18 +1,86 @@
+
 .nav {
   font-family: "Space Grotesk", sans-serif;
   background-color: rgb(27, 27, 27);
   font-weight: 600;
   display: flex;
-  padding: 20px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
   color: white;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .div {
   width: 39%;
 }
 
+.logo {
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+}
+
 #divtwo {
   display: flex;
+  align-items: center;
+  justify-content: flex-end;
   gap: 35px;
   width: 50%;
+}
+
+#divtwo a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+
+#divtwo a:hover {
+  color: rgb(255, 70, 70);
+}
+
+/* Active Page */
+#divtwo a.active {
+  color: rgb(255, 70, 70);
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .nav {
+    padding: 20px;
+  }
+
+  .div {
+    width: auto;
+  }
+
+  #divtwo {
+    width: auto;
+    gap: 20px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .nav {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 10px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  #divtwo {
+    width: 100%;
+    justify-content: center;
+    gap: 18px;
+  }
+
+  #divtwo a {
+    font-size: 13px;
+  }
 }

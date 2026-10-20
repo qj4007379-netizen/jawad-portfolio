@@ -35,3 +35,65 @@
   padding-left: 15px;
   padding-right: 15px;
 }
+
+
+/* Tablet */
+@media (max-width: 768px) {
+  .contect {
+    height: auto;
+    min-height: 550px;
+    padding: 60px 20px;
+    gap: 80px;
+    box-sizing: border-box;
+  }
+
+  .h2 {
+    font-size: clamp(28px, 6vw, 45px);
+    text-align: center;
+  }
+
+  .contect2 p {
+    text-align: center;
+    line-height: 1.7;
+  }
+
+  .btndiv0 {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .contect {
+    padding: 50px 15px;
+    gap: 50px;
+  }
+
+  .h2 {
+    font-size: 30px;
+  }
+
+  .contect2 {
+    gap: 20px;
+    width: 100%;
+  }
+
+  .contect2 p {
+    font-size: 14px;
+  }
+
+  .contect2 p br {
+    display: none;
+  }
+
+  .btn0 {
+    padding: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .btndiv0 {
+    gap: 12px;
+  }
+}

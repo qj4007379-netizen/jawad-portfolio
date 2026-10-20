@@ -16,52 +16,40 @@ export default function Home() {
         <div className="upper">
           <h1 className="fullstack">FULL</h1>
           <h1 className="fullstack">STACK</h1>
-          <div className="icon">
+          <div className="iconbox">
             <div className="box1">
-              <img src={css} alt="css" className="icon1" />
+              <img src={css} alt="css" className="icon" />
             </div>
             <div className="box2">
-              <img src={js} alt="js" className="icon1" />
+              <img src={js} alt="js" className="icon" />
             </div>
             <div className="box3">
               {" "}
-              <img src={react} alt="react" className="icon1" />{" "}
+              <img src={react} alt="react" className="icon" />{" "}
             </div>
           </div>
         </div>
 
         <div className="lover">
-          <div className="icon">
+          <div className="iconbox">
             <div className="box1">
               {" "}
-              <img src={node} alt="node" className="icon1" />
+              <img src={node} alt="node" className="icon" />
             </div>
             <div className="box2">
               {" "}
-              <img src={ex} alt="es" className="icon1" />{" "}
+              <img src={ex} alt="es" className="icon" />{" "}
             </div>
             <div className="box3">
               {" "}
-              <img src={db} alt="db" className="icon1" />{" "}
+              <img src={db} alt="db" className="icon" />{" "}
             </div>
           </div>
           <h1 className="developer">DEVELOPER</h1>
         </div>
-        {/* <h1 className="h1">HI, I'M JAWAD</h1> */}
-
-        {/* <p>
-              I am a passionate Full Stack Developer who builds modern,
-              responsive, and user-friendly web applications using React,
-              Node.js, and other modern technologies.
-            </p> */}
 
         <div>
-          <Link to="/about">
-            {/* <span className="relative z-10"> Explore Magic </span> */}
-            <div></div>
-          </Link>
-
-          {/* <Link to="/contact">Get In Touch</Link> */}
+          <Link to="/about"></Link>
         </div>
       </div>
       <div className="hero2">
