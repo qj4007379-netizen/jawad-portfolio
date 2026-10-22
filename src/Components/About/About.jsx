@@ -1,8 +1,47 @@
+
+import { useRef } from "react";
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./About.css";
 
+gsap.registerPlugin(ScrollTrigger);
+
 export default function About() {
+  const aboutRef = useRef(null);
+
+  useGSAP(
+    () => {
+      gsap.from(".h1about", {
+        y: 40,
+        opacity: 0,
+        duration: 0.8,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: aboutRef.current,
+          start: "top 80%",
+          once: true,
+        },
+      });
+
+      gsap.from(".about2 p", {
+        y: 30,
+        opacity: 0,
+        duration: 0.8,
+        delay: 0.2,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: aboutRef.current,
+          start: "top 80%",
+          once: true,
+        },
+      });
+    },
+    { scope: aboutRef }
+  );
+
   return (
-    <div className="about">
+    <div className="about" ref={aboutRef}>
       <div className="about2">
         <h1 className="h1about">
           Building Amazing Experiences

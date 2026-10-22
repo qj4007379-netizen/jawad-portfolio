@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-
 import {
   Route,
   RouterProvider,
@@ -10,6 +9,7 @@ import {
 } from "react-router-dom";
 import Layout from "./Layout.jsx";
 import Home from "./Components/Home/Home.jsx";
+import Jawad from "./Components/Jawad/Jawad.jsx";
 import About from "./Components/About/About.jsx";
 import Contact from "./Components/Contact/Contact.jsx";
 import Projects from "./Components/projects/Projects.jsx";
@@ -22,6 +22,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+      },
+      {
+        path: "/Jawad",
+        element: <Jawad />,
       },
       {
         path: "about",

@@ -1,199 +1,253 @@
-.hero {
+
+/* ===== Desktop ===== */
+
+.herohome {
   background-color: rgb(27, 27, 27);
   width: 100%;
-  height: 600px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-.hero1 {
-  margin-top: -40px;
-}
-.upper,
-.lover {
+  min-height: 600px;
+  padding: 40px 5%;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 30px;
+  box-sizing: border-box;
 }
-.lover {
-  margin-top: -50px;
-}
-.developer,
-.fullstack {
+
+.text1 {
+  flex: 1;
+  min-width: 0;
+  padding: 20px;
   font-family: "Space Grotesk", sans-serif;
-  font-size: clamp(48px, 8vw, 116px);
-  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
   letter-spacing: 1px;
+  box-sizing: border-box;
 }
-.fullstack {
-  color: rgb(255, 255, 255);
-}
-.developer {
-  color: rgb(240, 11, 11);
-}
-.box1 {
-  border: solid 1px red;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
-}
-.box3,
-.box2,
-.box1 {
-  width: 100px;
-  height: 70px;
-  background-color: rgb(17, 17, 17);
+
+.img1 {
+  flex: 0 1 45%;
+  min-width: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
 }
-.iconbox {
+
+.img2 {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  object-fit: contain;
+  border: none;
+  border-radius: 0;
+  box-sizing: border-box;
+
+  /* تصویر کے کناروں کو بیک گراؤنڈ میں نرم طریقے سے ملانا */
+  -webkit-mask-image: radial-gradient(
+    ellipse at center,
+    black 45%,
+    rgba(0, 0, 0, 0.85) 60%,
+    transparent 100%
+  );
+
+  mask-image: radial-gradient(
+    ellipse at center,
+    black 45%,
+    rgba(0, 0, 0, 0.85) 60%,
+    transparent 100%
+  );
+}
+
+.h6 {
+  color: red;
+  font-size: 14px;
+  margin: 0;
+}
+
+.h1 {
+  font-size: 48px;
+  line-height: 1.15;
+  overflow-wrap: break-word;
+  margin: 0;
+}
+
+#h1 {
+  color: white;
+}
+
+#h2 {
+  color: red;
+}
+
+.p {
+  color: white;
+  font-size: 16px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.hero-buttons {
   display: flex;
-}
-.icon {
-  width: 40px;
-  height: 40px;
-}
-.box3,
-.box2 {
-  border-top: solid 1px red;
-  border-bottom: solid 1px red;
-  border-right: solid 1px red;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
-.box3 {
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+.btn {
+  display: inline-block;
+  padding: 12px 18px;
+  border: 1px solid red;
+  border-radius: 5px;
+  background-color: transparent;
+  color: white;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.hero2 {
-  margin-top: 170px;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-.dot1 {
-  display: flex;
-  gap: 5px;
-}
-.dot {
-  width: 8px;
-  height: 8px;
-  background-color: rgb(255, 255, 255);
-  border-radius: 390px;
-}
-.red {
-  width: 8px;
-  height: 8px;
-  background-color: rgb(230, 15, 15);
-  border-radius: 390px;
-}
-/* Tablet Responsive */
-@media (max-width: 1024px) {
-  .hero {
-    height: auto;
-    min-height: 600px;
-    padding: 50px 16px 25px;
-    box-sizing: border-box;
-  }
-
-  .hero1 {
-    margin-top: 0;
-    width: 100%;
-  }
-
-  .upper {
-    flex-wrap: wrap;
-    gap: 10px 12px;
-  }
-
-  .fullstack {
-    font-size: clamp(48px, 8vw, 80px);
-  }
-
-  .upper .iconbox {
-    flex-basis: 100%;
-    justify-content: center;
-  }
-
-  .lover {
-    flex-direction: column;
-    gap: 15px;
-    margin-top: 25px;
-  }
-
-  .developer {
-    font-size: clamp(48px, 8vw, 80px);
-  }
-
-  .hero2 {
-    margin-top: 60px;
-    width: 100%;
-    align-items: center;
-  }
-
-  .dot1 {
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 100%;
-  }
+.btn:hover {
+  background-color: red;
+  color: white;
 }
 
-/* Mobile Responsive */
-@media (max-width: 480px) {
-  .hero {
+.hero-skills {
+  font-size: 13px;
+}
+
+
+/* ===== Tablet ===== */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .herohome {
     min-height: 550px;
-    padding: 45px 10px 20px;
+    padding: 35px 3%;
+    gap: 15px;
   }
 
-  .upper {
-    gap: 5px 10px;
+  .text1 {
+    padding: 12px;
+    gap: 14px;
   }
 
-  .fullstack {
-    font-size: clamp(30px, 9vw, 42px);
-    letter-spacing: 0;
+  .img1 {
+    flex-basis: 45%;
   }
 
-  .developer {
-    font-size: clamp(27px, 8vw, 38px);
-    letter-spacing: 0;
-    text-align: center;
+  .h1 {
+    font-size: 36px;
   }
 
-  .lover {
-    gap: 12px;
-    margin-top: 20px;
+  .p {
+    font-size: 14px;
   }
 
-  .box1,
-  .box2,
-  .box3 {
-    width: 60px;
-    height: 50px;
-    box-sizing: border-box;
+  .hero-skills {
+    font-size: 12px;
   }
 
-  .icon1 {
-    width: 28px;
-    height: 28px;
+  .btn {
+    padding: 11px 13px;
+    font-size: 12px;
   }
 
-  .hero2 {
-    margin-top: 45px;
-    gap: 5px;
+  .img2 {
+    max-width: 400px;
+  }
+}
+
+
+/* ===== Mobile ===== */
+
+@media (max-width: 767px) {
+  .herohome {
+    min-height: auto;
+    padding: 40px 20px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 30px;
   }
 
-  .dot1 {
-    gap: 5px;
+  .text1 {
+    flex: none;
+    width: 100%;
+    padding: 0;
+    gap: 14px;
   }
 
-  .dot,
-  .red {
-    width: 6px;
-    height: 6px;
-    flex-shrink: 0;
+  .h6 {
+    font-size: 13px;
+  }
+
+  .h1 {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+
+  .p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .hero-buttons {
+    gap: 10px;
+  }
+
+  .btn {
+    padding: 12px 14px;
+    font-size: 13px;
+  }
+
+  .img1 {
+    flex: none;
+    width: 100%;
+    padding: 0;
+  }
+
+  .img2 {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+  }
+
+  .hero-skills {
+    font-size: 12px;
+  }
+}
+
+
+/* ===== Small Mobile ===== */
+
+@media (max-width: 480px) {
+  .herohome {
+    padding: 30px 18px;
+    gap: 25px;
+  }
+
+  .h1 {
+    font-size: 29px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 13px 10px;
+  }
+
+  .hero-skills {
+    font-size: 11px;
+  }
+
+  .img2 {
+    max-width: 100%;
   }
 }

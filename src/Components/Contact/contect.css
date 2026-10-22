@@ -10,6 +10,30 @@
   flex-direction: column;
   gap: 125px;
 }
+
+
+.btn0 {
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.btn0:hover {
+  background-color: red;
+  border-color: red;
+}
+
+.btn0 a {
+  display: block;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.btn0:hover a {
+  color: white;
+}
+
 .contect2 {
   display: flex;
   align-items: center;

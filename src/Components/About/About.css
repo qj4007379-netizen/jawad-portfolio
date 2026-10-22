@@ -1,19 +1,15 @@
-/* =========================
-   Desktop / Base CSS
-========================= */
+
+/* Desktop / Base CSS */
 
 .about {
   font-family: "Space Grotesk", sans-serif;
   background-color: rgb(27, 27, 27);
   color: white;
-
   width: 100%;
   min-height: 600px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   padding: 40px 24px;
   box-sizing: border-box;
 }
@@ -21,21 +17,15 @@
 .about2 {
   display: flex;
   flex-direction: column;
-
   width: 100%;
   max-width: 1000px;
-
   padding: 25px;
   box-sizing: border-box;
-
-  border-top: solid 1px rgb(252, 249, 249);
-  border-right: solid 1px rgb(252, 249, 249);
-  border-bottom: solid 1px rgb(252, 5, 5);
-  border-left: solid 1px rgb(248, 5, 5);
-
+  border: 1px solid rgb(252, 249, 249);
+  border-bottom-color: rgb(252, 5, 5);
+  border-left-color: rgb(248, 5, 5);
   border-radius: 15px;
   background-color: rgb(17, 17, 17);
-
   gap: 25px;
 }
 
@@ -43,7 +33,6 @@
   font-size: clamp(48px, 6vw, 64px);
   font-weight: 600;
   color: rgb(250, 5, 5);
-
   line-height: 1.15;
   margin: 0;
 }
@@ -54,14 +43,10 @@
   margin: 0;
 }
 
-
-/* =========================
-   Tablet: 481px to 768px
-========================= */
+/* Tablet */
 
 @media (max-width: 768px) {
   .about {
-    min-height: 600px;
     padding: 32px 18px;
   }
 
@@ -80,10 +65,7 @@
   }
 }
 
-
-/* =========================
-   Mobile: 480px and below
-========================= */
+/* Mobile */
 
 @media (max-width: 480px) {
   .about {
